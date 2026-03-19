@@ -3,9 +3,9 @@ This repository contains the source code for replicating the simulations from th
 
 ### Code structure
 The code is organized as follows:
-- The simulation_utils.jl contains functions and structs implementing simulation of information propagation using GFSIR model from the paper. If one wants to use and integrate the model into existing simulation pipeline, importing this file should be sufficient.
-- The experiment_utils.jl contains functions to replicate the experiment setup used in the paper. If one wants to replicate the results then he/she should aslo import this file.
-- The experiment_pipeline.jl implements the whole pipeline used in the experiment. The parameters for a given experiments should be specified in the params.txt file such as described below in the parameters format section and in the params.txt file's comments. The output is saved into data_o{NUMBER_OF_OBSERVERS}.txt file/s in the format specified in the Output format section
+- The **simulation_utils.jl** contains functions and structs implementing simulation of information propagation using GFSIR model from the paper. If one wants to use and integrate the model into existing simulation pipeline, importing this file should be sufficient.
+- The **experiment_utils.jl** contains functions to replicate the experiment setup used in the paper. If one wants to replicate the results then he/she should aslo import this file.
+- The **experiment_pipeline.jl** implements the whole pipeline used in the experiment. The parameters for a given experiments should be specified in the params.txt file such as described below in the parameters format section and in the **params.txt** file's comments. The output is saved into data_o{NUMBER_OF_OBSERVERS}.txt file/s in the format specified in the Output format section
 
 ### Parameters Format
 When replicating our experiment, there are two avaiable **modes**. The alpha mode performs a set of propagation simulations with changing **alpha** ($\alpha$) parameter, with set **beta** ($\beta$). In the case of the beta mode the simulations are conducted with a set $\alpha$ value and changing $\beta$. 
@@ -22,7 +22,7 @@ The **params.txt** file should be then arranged as follows:
 **alpha** (ex.0.0 0.3 5 or 0.6)#   Alpha value (In case of alpha mode, add start, delta, number of steps, in case of beta mode add singular float value)
 **j_max** (ex. 100)#         Number of simulations to average per single data point
 
-Note that each parameter is specified in the new line. The order of the parameters matters. In case of multiple values per parameter the delimeter is \space, do not use \, or \tab. Do not delete \# since it is used to divide the parameter value from a comment.
+Note that each parameter is specified in the new line. The order of the parameters matters. In case of multiple values per parameter the delimeter is \space, do not use \, or \tab. **Do not delete \#** since it is used to divide the parameter value from a comment.
 
 ### Output format
 During the simulation, the results will be saved to data_o{**observer_count**}.txt file (or multiple files) in the case of multiple **observer_count** parameters provided). In the output files each datapoint is saved in a new line. The format is:
