@@ -1,0 +1,6 @@
+1000 5 2#    Network parameters: E-R -> (N:Int, p:Float16), B-A -> (N:Int, m:Int, k:Int), From a file -> (file_name:String)
+100#         Number of observers. One can add few observer values in decreasing order. In such case there will be a few output files.
+alpha#       Experiment mode: (alpha/beta)  
+0.7#         Beta value (In case of alpha mode, add singular Float value, in case of beta mode add start, delta, number of steps)
+0.0 0.3 5#   Alpha value (In case of alpha mode, add start, delta, number of steps, in case of beta mode add singular float value)
+100#         Number of simulations to average per single data point

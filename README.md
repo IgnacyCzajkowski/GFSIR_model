@@ -1,2 +1,5 @@
-# GFSIR_model
-This repository contains the source code for replicating the simulations from the research paper “Nonlinear dynamics of information overload: Impact on source localization in complex networks” by Ignacy Czajkowski and Robert Paluch. In particular, the GFSIR propagation model on networks is implemented here.
+### Requirements
+-- Julia (tested version 1.12.5)
+-- Graphs (https://github.com/JuliaGraphs/Graphs.jl/)
+-- Setfield (https://github.com/jw3126/Setfield.jl)
+-- StatsBase (https://github.com/JuliaStats/StatsBase.jl)
