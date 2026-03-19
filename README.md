@@ -29,10 +29,10 @@ During the simulation, the results will be saved to data_o{**observer_count**}.t
 **alpha**/**beta** (depending on the mode) | **avg_precision** | **avg_ranking** | **prec_std_dev** | **rank_std_dev** |
 
 ### Requirements
--- Julia (tested version 1.12.5)
--- Graphs (https://github.com/JuliaGraphs/Graphs.jl/)
--- Setfield (https://github.com/jw3126/Setfield.jl)
--- StatsBase (https://github.com/JuliaStats/StatsBase.jl)
+- Julia (tested version 1.12.5)
+- Graphs (https://github.com/JuliaGraphs/Graphs.jl/)
+- Setfield (https://github.com/jw3126/Setfield.jl)
+- StatsBase (https://github.com/JuliaStats/StatsBase.jl)
 
 ### License
 The repository has been licensed with MIT Licence for impoving future usage and replicability.
