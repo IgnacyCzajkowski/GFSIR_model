@@ -3,9 +3,9 @@ This repository contains the source code for replicating the simulations from th
 
 ### Code structure
 The code is organized as follows:
--- The simulation_utils.jl contains functions and structs implementing simulation of information propagation using GFSIR model from the paper. If one wants to use and integrate the model into existing simulation pipeline, importing this file should be sufficient.
--- The experiment_utils.jl contains functions to replicate the experiment setup used in the paper. If one wants to replicate the results then he/she should aslo import this file.
--- The experiment_pipeline.jl implements the whole pipeline used in the experiment. The parameters for a given experiments should be specified in the params.txt file such as described below in the parameters format section and in the params.txt file's comments. The output is saved into data_o{NUMBER_OF_OBSERVERS}.txt file/s in the format specified in the Output format section
+- The simulation_utils.jl contains functions and structs implementing simulation of information propagation using GFSIR model from the paper. If one wants to use and integrate the model into existing simulation pipeline, importing this file should be sufficient.
+- The experiment_utils.jl contains functions to replicate the experiment setup used in the paper. If one wants to replicate the results then he/she should aslo import this file.
+- The experiment_pipeline.jl implements the whole pipeline used in the experiment. The parameters for a given experiments should be specified in the params.txt file such as described below in the parameters format section and in the params.txt file's comments. The output is saved into data_o{NUMBER_OF_OBSERVERS}.txt file/s in the format specified in the Output format section
 
 ### Parameters Format
 When replicating our experiment, there are two avaiable **modes**. The alpha mode performs a set of propagation simulations with changing **alpha** ($\alpha$) parameter, with set **beta** ($\beta$). In the case of the beta mode the simulations are conducted with a set $\alpha$ value and changing $\beta$. 
